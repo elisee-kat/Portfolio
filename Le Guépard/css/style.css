@@ -1,0 +1,179 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+/*****************************************************************/
+body {
+    position: absolute;
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header header"
+        "menu menu"
+        "main main"
+        "footer footer";
+
+    font-family: cursive;
+    margin: 0;
+}
+
+/*Créer un bg-col ou img transparent (à trouvé peut-être sur internet) -fait- | retirer le mosaïque avec bg-size(100%, 100%) -fait-*/
+body::after {
+    content: "";
+    background: url(../fond_safari.jpg);
+    background-size: 100% 100%;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+/*****************************************************************/
+header {
+    position: relative;
+    grid-area: header;
+    text-align: center;
+    background-color: #548ec7;
+    
+    font-family: 'Courgette';
+    letter-spacing: 3em;
+}
+
+h1{
+    filter: drop-shadow(-5px 0 1mm rgb(210, 151, 56));
+}
+
+header .sujet-article {
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+/*****************************************************************/
+nav {
+    position: relative;
+    grid-area: menu;
+    margin-bottom: em;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    background-color: #563a28;
+    margin: 0;
+}
+
+nav li {
+    display: block;
+    padding: 8px 16px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+}
+
+nav a:hover {
+    background-color: #d9bb3f;
+
+}
+
+/*****************************************************************/
+main {
+    position: relative;
+    grid-area: main;
+}
+
+h3,
+p.article,
+table h3 {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+main span.keyword {
+    font-family: cursive;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+figure.indexpic {
+    text-align: center;
+}
+
+figure.analyse-pic {
+    display: inline-block;
+    text-align: center;
+    margin-left: 7em;
+}
+
+figure.bonus-pic {
+    display: inline-block;
+    margin-left: 4em;
+}
+
+figure#mark {
+    text-align: center;
+}
+
+span.nomFelin {
+    font-family: 'Indie Flower';
+    font-weight: bolder;
+}
+
+
+table,
+th,
+td {
+    margin-left: 7em;
+}
+
+th,
+td {
+    border: 1px solid black;
+    font-family: cursive;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+table .vide {
+    border: none;
+}
+
+.j {
+    color: red;
+}
+
+.g {
+    color: orangered;
+}
+
+.l {
+    color: green;
+}
+
+form {
+    margin-left: 2em;
+}
+
+fieldset {
+    width: 30em;
+}
+
+button {
+    font-size: 20px;
+    margin-left: 2px;
+}
+
+/*****************************************************************/
+footer {
+    position: relative;
+    grid-area: footer;
+    background-color: #563a28;
+}

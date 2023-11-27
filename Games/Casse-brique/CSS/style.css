@@ -1,0 +1,56 @@
+body{
+    display: grid;
+    height: 98vh;
+    width: 100vw;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header header"    
+                        "main main";
+    grid-gap: 10px 30px;
+    margin-left: auto;
+}
+
+header{
+    grid-area: header;
+    color: white;
+    background-color: royalblue;
+    font-family: sans-serif;
+    text-align: center;
+    width: 65rem;
+    margin-left: 23%;
+}
+
+#bigTitle{
+    font-size: 3em;
+}
+
+main{
+    grid-area: main;
+
+}
+
+#scène{
+    position: relative;
+    border: 4px royalblue solid;
+    height: 600px;
+    width: 960px;
+    margin-left: 25%;
+    overflow: hidden;
+}
+
+#ball{
+    position: absolute;
+    background-color: rgb(87, 124, 236);
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+}
+
+#paddle{
+    position: absolute;
+    background-color: rgb(87, 124, 236);
+    height: 16px;
+    width: 96px;
+    border-radius: 10%;
+    top: 585px;
+}

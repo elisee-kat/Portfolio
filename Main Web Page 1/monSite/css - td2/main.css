@@ -1,0 +1,135 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+/***************************************************/
+body{
+    position: absolute;
+    background-color: #F6D38E;
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header header"
+        "menu main"
+        "footer footer";
+    font-family: cursive;
+    margin: 0;
+}
+
+/***************************************************/
+header {
+    position: relative;
+    grid-area: header;
+    text-align: center;
+    background-color: #F1A204;
+    color: white;
+    font-family: 'Courgette';
+    text-shadow: -6px 4px 1mm black;
+    letter-spacing: 1em;
+    margin: 0;
+    padding: 10px;
+}
+
+.misEnForme{
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/***************************************************/
+nav {
+    grid-area: menu;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #FCC455;
+    color: white;
+    padding-right: 50px;
+    padding-bottom: 28em;
+}
+
+nav li {
+    padding: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    background-color: gold;
+
+}
+
+/***************************************************/
+main{
+    grid-area: main;
+    margin-left: 2em;
+    margin-top: 0;
+}
+
+h2{
+    color: #302309;
+}
+
+figure.pic{
+    display: inline-block;
+    margin-left: 8em;
+}
+
+th{
+    background-color: #F1A204;
+}
+
+td{
+    border: 2px solid #F1A204;
+}
+
+th, td{
+    border-radius: 2px;
+    font-family: cursive;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+table .vide{
+    border: none;
+    background-color: #F6D38E;
+}
+
+#java ul{
+    list-style-type: none;
+}
+
+code, samp, kbd{
+    background-color: #b87e0a;
+}
+
+.réponse::before{
+    content: "\258d";
+    color: #b87e0a;
+}
+
+.explication::before{
+    content: "\258d";
+    color: #ecac2b;
+}
+
+/***************************************************/
+footer{
+    position: relative;
+    grid-area: footer;
+    background-color: #302309;
+    color: white;
+    padding-left: 1em;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}

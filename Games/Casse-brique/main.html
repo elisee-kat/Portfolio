@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Page d'accueil de mon site">
+    <meta name="keywords" content="ELISEE, Jeu, Casse Brique">
+    <meta name="author" content="KATSIOTO T. Elisée">
+    <title>Index</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="JS/ctrl/PaddleCtrl.js"></script>
+    <script src="JS/model/Paddle.js"></script>
+    <script src="JS/view/View.js"></script>
+    <script src="JS/model/Position.js"></script>
+    <script src="JS/model/Movement.js"></script>
+    <script src="JS/model/Ball.js"></script>
+    <script src="JS/ctrl/BallCtrl.js"></script>
+    <script src="JS/model/Game.js"></script>
+    <script src="JS/ctrl/GameCtrl.js"></script>
+</head>
+
+<body>
+    <header>
+        <b>
+            <p id="bigTitle" style="font-family: 'Courgette'">Casse Brique !</p>
+            <h3>WEBG2 - <i>53128 - KATSIOTO T. Elisée</i></h3>
+        </b>
+    </header>
+    <main>
+        <div id="scène">
+            <span id="ball"></span>
+            <span id="paddle"></span>
+        </div>
+    </main>
+    <script>
+        let game = new Game();
+        let view = new View();
+        let gameCtrl = new GameCtrl(game, view);
+        gameCtrl.play();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala" rel="stylesheet">
+    <title>Contact | Hebdomarticle</title>
+</head>
+
+<body>
+    <header>
+        <h1>HEBDOMARTICLE : <span class="sujet-article">LE GUEPARD</span></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Etymologie / Identité</a></li>
+            <li><a href="analyse.html">Analyse / Comparaison</a></li>
+            <li><a href="bonus.html">Bonus</a></li>
+            <li>Inscription / Contact</li>
+        </ul>
+    </nav>
+
+    <main>
+        <h3>Merci pour votre visite!</h3>
+        <p class="article">
+            Merci pour le temps que vous accordez à lire nos articles hebdomadaire, sachez que c'est tout bonnement un
+            plaisir
+            pour nous de vous recevoir au travers de ce site dont le but principale est
+            de vous apporter une connaissance sur les animaux et insectes ou toutes sortes être vivant.<br>
+            <br>
+            Si vous voulez être informer de la sortie de nouveaux sujets, veuillez-vous rendre sur la partie
+            "Enregistrement" et remplir le formulaire pour vous inscrire, ainsi que nous laisser un commentaire,
+            poser des questions ou nous proposer des suggestions dans la partie "Commentaire/Question/Suggestion".
+        </p>
+        <br>
+        <p>
+        <form>
+            <fieldset>
+                <legend>Enregistrement</legend>
+                <input id="nom" placeholder="Votre nom..." required>
+                <input id="prenom" placeholder="Votre prénom..." required>
+                <br>
+                <label for="naiss">Date de naissance:</label>
+                <input type="date" id="naiss" required>
+                <br>
+                <label for="genre">Genre:</label>
+                <input type="radio" id="genreH" name="genre" value="H" checked>
+                <label for="genreH">Femme</label>
+                <input type="radio" id="genreF" name="genre" value="F">
+                <label for="genreF">Homme</label>
+                <input type="radio" id="nonGenré" name="genre" value="NB">
+                <label for="genreH">Non-Binaire</label>
+                <br>
+                <label for="cp">Code postal:</label>
+                <input type="number" id="cp" min="1000" max="9999" required>
+                <label for="localite">Localité:</label>
+                <input id="localite" required>
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Commentaire/Question/Suggestion</legend>
+                <textarea cols="65" rows="10"
+                    placeholder="Vous pouvez ecrire vo(s) question(s) et/ou suggestion(s) ici"></textarea>
+            </fieldset>
+            <button>S'inscrire</button>
+            <br><br><br><br><br><br>
+        </form>
+        </p>
+    </main>
+
+    <footer>
+        53128 - KATSIOTO T. Elisée (B141) | DNA
+    </footer>
+</body>
+
+</html>

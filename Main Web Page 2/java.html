@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Questions/Réponses/Explications">
+        <meta name="keywords" content="connaissance, java">
+        <meta name="author" content="KATSIOTO T. Elisée">
+        <title>Connaissance java</title>
+        <link rel="stylesheet" href="CSS/main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette">
+    </head>
+    <body id="questionnaire">
+        <header>
+            <b style="font-family: 'Courgette'">Testez votre connaissance en JAVA!</b>
+        </header>
+        <br>
+        <nav>
+            <h1>Menu</h1>
+            <ul>
+                <li><a href="index.html">Accueil</a></li><br>
+                <li><a href="horaire.html">Horaire</a></li><br>
+                <li>Quizz</li><br>
+                <li><a href="mur.html">Mur</a></li>
+            </ul>
+        </nav>
+        <main>
+        <ol>
+            <li class="question">Qu'affiche System.out.println("1"+"2") ?
+                <ul>
+                    <li class="rep">Réponse : 12</li>
+                    <li class="explication">Explication : Le + entre 2 chaines les concatène</li>
+                </ul>
+            </li>
+            <br>
+            <li class="question">Qu'affiche System.out.println(1+2) ?<br>
+                <ul>
+                    <li class="rep">Réponse : 3</li>
+                    <li class="explication">Explication : Le + entre 2 entiers les additionne</li>
+                </ul>
+            </li>
+            <br>
+            <li class="question">Qu'affiche System.out.println("1+2="+1+2) ?<br>
+                <ul>
+                    <li class="rep">Réponse : 1+2=12</li>
+                    <li class="explication">Explication : Le premier + concatène (en transformant le 1 en chaine). Idem pour le second +</li>
+                </ul>
+            </li>
+            <br>
+            <li class="question">Qu'affiche System.out.println("1+2="+(1+2)) ?<br>
+                <ul>
+                    <li class="rep">Réponse : 1+2=3</li>
+                    <li class="explication">Explication : Les parenthèses impliquent qu'on fait le second + (addition). <br>Ensuite, le premier + concatène</li>
+                </ul>
+            </li>
+            <br>
+            <li class="question">Si ok est un booléen initialisé à false, que va faire if (ok=true) <br>System.out.println("OK!"); ?<br>
+                <ul>
+                    <li class="rep">Réponse : Affiche OK!</li>
+                    <li class="explication">Explication : la condition est en fait une assignation qui met ok à vrai. <br>Du coup, la condition est vraie.</li>
+                </ul>
+            </li>
+        </ol>
+        </main>
+        <br>
+        <footer>
+            (c) KATSIOTO T. Elisée B156 | Si vous voulez me joindre pour prendre contacte, envoyez un email:
+            <a href = "mailto: 53128@etu.he2b.be">53128@etu.he2b.be</a>
+        </footer>
+    </body>
+</html>

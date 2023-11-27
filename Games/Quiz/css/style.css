@@ -1,0 +1,65 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+/***************************************************/
+body{
+    position: absolute;
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header header"
+        "main main"
+        "none footer";
+        margin: 0;
+}
+
+/***************************************************/
+header{
+    position: relative;
+    grid-area: header;
+    text-align: center;
+    background-color: rgb(5, 5, 214);
+    color: white;
+    font-family: 'Courgette';
+    font-size: 2em;
+    padding: 15px;
+}
+
+/***************************************************/
+main{
+    grid-area: main;
+    text-align: center;
+    background-color: rgb(195, 195, 240);
+    border: 1px solid black;
+    border-radius: 1em;
+    font-family: sans-serif;
+    margin-left: 30%;
+    margin-top: 2em;
+    margin-right: 30%;
+    margin-bottom: 20%;
+    padding-top: 2em;
+}
+
+.title > span{
+    font-size: 2em;
+}
+
+button{
+    background-color: blue;
+    border-radius: 20px;
+    font-size: 1em;
+    color: white;
+    padding: 10px;
+}
+/***************************************************/
+footer{
+    grid-area: footer;
+    border-style: ridge none none;
+    margin-right: 1em;
+    margin-left: 75%;
+    text-align: right;
+}
