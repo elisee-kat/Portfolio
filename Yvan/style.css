@@ -58,6 +58,19 @@ nav * {
     justify-content: space-evenly;
 }
 
+.game {
+    position: absolute;
+    top: 2em;
+    display: block;
+    background-color: red;
+    padding: 0;
+    visibility: hidden;
+}
+
+op1:checked~.game {
+    visibility: visible;
+}
+
 main {
     display: flex;
     width: 90vw;
