@@ -1,0 +1,67 @@
+td:not(.noborder),
+th {
+    border: 1px solid rgb(51, 51, 153);
+}
+
+p.tab {
+    margin: 0;
+}
+
+.secondTab {
+    border: none;
+    background-color: #FFFFCC;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.secondTab tr td button {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.actif {
+    background-color: #00B050;
+    border: 2px solid #336600;
+    color: #3333CC;
+    width: 16em;
+    height: 2em;
+}
+
+.Bouton1 {
+    border: 3px outset #3333ff;
+    box-shadow: #95b3d7 9px 2px 13px;
+    background-color: #dbe5f1;
+    color: #3333CC;
+    width: 16em;
+    height: 2em;
+}
+
+.Bouton2 {
+    border: 3px outset #669900;
+    box-shadow: #95b3d7 9px 2px 13px;
+    background-color: #dbe5f1;
+    width: 16em;
+    height: 2em;
+}
+
+.Bouton1:hover,
+.Bouton2:hover {
+    color: #95b3d5;
+    background-color: #3333CC;
+    border: 3px outset rgb(51, 51, 255);
+}
+
+.Quitter {
+    display: table-cell;
+    width: 180px;
+    height: 40px;
+    cursor: pointer;
+    color: blue;
+    border-radius: 5px;
+    background-image: linear-gradient(burlywood, crimson);
+}
+
+.Quitter:hover {
+    background-image: linear-gradient(crimson, burlywood);
+}

@@ -1,0 +1,16 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    height: 2em;
+    width: 6em;
+    margin-bottom: 1em;
+}
+

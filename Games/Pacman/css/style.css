@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    background-color: black;
+}
+
+body{
+    display: grid;
+    height:585px;
+    width: 425px;
+    font-family: cursive;
+    margin: auto;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+header{
+    color:white;
+    font-family: 'RocknRoll One';
+    text-align: center;
+    margin: 5px;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+header #current_score{
+    display: flex;
+    justify-content: left;
+    margin-left: 2.5em;
+}
+
+main{
+    background-color: whitesmoke;
+    margin: 3px;
+    height: 465px;
+    width: 420px;
+}
+
+footer{
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+button {
+    position: absolute;
+    right: 3em;
+    bottom: 4em;
+    height:2em;
+    width: 8em;
+    background-color: black;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+button a{
+    color: white;
+}

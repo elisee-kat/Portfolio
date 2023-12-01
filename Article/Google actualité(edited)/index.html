@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Google Actualités</title>
+</head>
+
+<body>
+    <section class="header-nav">
+        <header class="flex just-cont_space-bt">
+            <div class="google-logo">
+                <img src="media/logo/google-logo.jpg" alt="logo de google" class="logo-google">
+                <span>Actualités</span>
+            </div>
+            <div class="search-setting flex just-cont_space-ev">
+                <div class="search just-cont_space-ev">
+                    <input type="text" placeholder="Recherche des sujets, des lieux et des sources" class="inputSearch">
+
+                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+
+                    <input type="checkbox" name="zero" id="search-input">
+                    <label for="search-input">
+                        <i class="fa-solid fa-caret-down  fa-lg"></i>
+                    </label>
+                </div>
+                <div class="setting">
+                    <i class="fa-regular fa-circle-question fa-lg"></i>
+                    <i class="fa-solid fa-gear  fa-lg"></i>
+                </div>
+            </div>
+            <div class="more-user flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="more"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z">
+                    </path>
+                </svg>
+                <a href="user.html">
+                    <img src="media/logo/ProfilPic.jpg" alt="Photo de Profil" class="user-pic">
+                </a>
+            </div>
+        </header>
+        <nav class="flex">
+            <section class="nav-bar flex">
+                <div class="NB_home nav Part1 just-cont_space-bt">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>Accueil</span>
+                    <span class="underline"></span>
+                </div>
+                <div class="NB_forU nav Part1" id="infoForU">
+                    <a href="#">
+                        <i class="fa-solid fa-gem"></i>
+                        Pour&nbsp;vous
+                    </a>
+                </div>
+                <div class="NB_followUp nav Part1">
+                    <a href="#NB-followUp">
+                        <i class="fa-regular fa-star"></i>
+                        Suivis
+                    </a>
+                </div>
+                <div class="showcase nav Part1">
+                    <a href="#showcase">
+                        <i class="fa-regular fa-newspaper"></i>
+                        News&nbsp;Showcase
+                    </a>
+                </div>
+                <div class="nav desktopFirst Part1">
+                </div>
+                <div class="nav Part2">
+                    <a href="#France">
+                        <i class="fa-regular fa-flag"></i>
+                        France
+                    </a>
+                </div>
+                <div class="nav Part2">
+                    <a href="#International">
+                        <i class="fa-solid fa-earth-africa"></i>
+                        International
+                    </a>
+                </div>
+                <div class="nav Part2">
+                    <a href="#Actualitéslocales">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Actualités&nbsp;locales
+                    </a>
+                </div>
+                <div class="nav Part2">
+                    <a href="#France">
+                        <i class="fa-solid fa-building"></i>
+                        Économie
+                    </a>
+                </div>
+                <div class="nav Part3">
+                    <a href="#France">
+                        <i class="fa-solid fa-flask"></i>
+                        <span>
+                            Sciences&nbsp;et&nbsp;technologies
+                        </span>
+                    </a>
+                </div>
+                <div class="nav Part3">
+                    <a href="#">
+                        <i class="fa-solid fa-film"></i>
+                        Divertissements
+                    </a>
+                </div>
+                <div class="nav Part3">
+                    <a href="#Sports">
+                        <i class="fa-solid fa-person-biking"></i>
+                        Sports
+                    </a>
+                </div>
+                <div class="nav Part3">
+                    <a href="#">
+                        <i class="fa-solid fa-dumbbell"></i>
+                        Santé
+                    </a>
+                </div>
+            </section>
+        </nav>
+    </section>
+    <main class="container">
+        <div class="row">
+            <div class="main-title col-12">
+                <section class="flex col col-12">
+                    <label for="paragraph" class="question">
+                        <span class="iconsupp">&#9432;</span>Comment les articles sont-ils classés ?
+                    </label>
+                    <input type="checkbox" name="one" id="paragraph">
+                    <div class="toggle">
+                        <p>Ces articles sont classés selon leur qualité,
+                            l'originalité de leur contenu, leur actualité et,
+                            si vos paramètres l'autorisent, votre activité et
+                            vos achats antérieurs dans Google Actualités,
+                            ainsi que votre activité dans d'autres produits Google.
+                            Google peut avoir un contrat de licence avec certains de ces éditeurs,
+                            mais cela n'a aucun impact sur le classement des résultats.
+                        </p>
+                        <p>
+                            <a href="" style="color: rgb(15, 116, 248);">
+                                En savoir plus
+                            </a>
+                        </p>
+                    </div>
+                </section>
+                <section class="section-featured flex just-cont_space-bt col-12">
+                    <div class="flex col">
+                        <div class="big-title">
+                            <h2>Votre&nbsp;sélection</h2>
+                        </div>
+                        <div class="date-bigTitle">
+                            mercredi&nbsp;26&nbsp;avril
+                        </div>
+                    </div>
+                    <div class="section-weather flex">
+                        <div class="sw">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="weather flex">
+                            <div class="weather-pic">
+                                <figure>
+                                    <img src="media/logo/weather.jpg" alt="" class="smallImg">
+                                </figure>
+                            </div>
+                            <div class="weather-info flex col">
+                                <div class="WI-location flex">
+                                    <div class="WIL-city">Région&nbsp;Wallonie</div>
+                                    <div class="WIL">
+                                        <i class="fa-sharp fa-solid fa-location-crosshairs"></i>
+                                    </div>
+                                </div>
+                                <div class="temperature">11&nbsp;°C</div>
+                                <a href="https://www.meteo.be/en/belgium">weather.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <section class="principal-art row">
+            <div class=" featured-article col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                <div class="SF-title">
+                    <h3 class="little-title flex">
+                        <div>À la une</div>
+                        <i class="fa-solid fa-chevron-right fa-xs"></i>
+                    </h3>
+                </div>
+                <hr>
+                <section class="big-featured flex">
+                    <div class="BF-first">
+                        <a href="article.html">
+                            <figure>
+                                <img src="media/big_img/Emmanuel Macron.jpg" alt="Emmanuel Macron" class="bigImg">
+                            </figure>
+                            <div class="media-logo">
+                                <img src="media/media_logo/media-Franceinfo_1.jpg" alt="" class="logo-media">
+                            </div>
+                            <h4 class="big-sentence">
+                                DIRECT. Conférence nationale du handicap :
+                                Emmanuel Macron annonce "pour ne plus avoir
+                                d'enfants sans solution" de scolarisation
+                                à la rentrée prochaine
+                            </h4>
+                            <div class="time">
+                                Il y a 1&nbsp;heure
+                            </div>
+                        </a>
+                    </div>
+                    <div class="BF-second flex col">
+                        <section class="media-scroller flex col">
+                            <article class="small-featured flex col">
+                                <div class="media flex">
+                                    <div class="media-logo">
+                                        <img src="media/media_logo/media-Europe1.jpg" alt="Europe 1 logo"
+                                            class="logo-media">
+                                        <span>Europe&nbsp;1</span>
+                                    </div>
+                                </div>
+                                <h4 class="small-sentence">
+                                    Macron accueille la Conférence Nationale du handicap à l'Élysée
+                                </h4>
+                                <div class="time flex">
+                                    <div>
+                                        Il y a 5&nbsp;heures
+                                    </div>
+                                    <span>
+                                        <i class="fa-brands fa-youtube fa-lg"></i>
+                                    </span>
+                                </div>
+                            </article>
+                            <article class="small-featured flex col">
+                                <div class="media flex">
+                                    <div class="media-logo">
+                                        <img src="media/media_logo/media-Lemonde_2.jpg" alt="Le Monde logo 2"
+                                            class="logo-media">
+                                        <span>Le Monde</span>
+                                    </div>
+                                </div>
+                                <h4 class="small-sentence">
+                                    La Conférence nationale du handicap boycottée par le principal collectif
+                                    d'associations
+                                </h4>
+                                <div class="time">
+                                    Il y a 10&nbsp;heures
+                                </div>
+                            </article>
+                            <article class="small-featured flex col">
+                                <div class="media flex">
+                                    <div class="media-logo">
+                                        <img src="media/media_logo/media-FranceInter_1.jpg" alt="France Inter logo 1"
+                                            class="logo-media">
+                                        <span>France Inter</span>
+                                    </div>
+                                </div>
+                                <h4 class="small-sentence">
+                                    Handicap : "Il est temps de considérer que l'inaccessibilité est un délit",
+                                    estime
+                                    Jérémie Boroy
+                                </h4>
+                                <div class="time flex">
+                                    <div>Il y a 11&nbsp;heures</div>
+                                    <span>
+                                        <i class="fa-brands fa-youtube fa-lg"></i>
+                                    </span>
+                                </div>
+                            </article>
+                        </section>
+                        <section class="full-cover flex">
+                            <figure>
+                                <img src="media/logo/googleusercontent.jpg" alt="user logo" class="cover">
+                            </figure>
+                            Couverture&nbsp;complète&nbsp;
+                            <span class="mobileV">de&nbsp;cet&nbsp;évènement</span>
+                        </section>
+                    </div>
+                </section>
+                <hr>
+                <div class="big-featured flex">
+                    <div class="BF-first">
+                        <img src="media/big_img/Elisabeth Borne & Emmanuel Macron.jpg" alt="Elisabeth Borne"
+                            class="bigImg">
+                        <div class="media-logo">
+                            <img src="media/media_logo/media-Lemonde_1.jpg" alt="Le Monde logo 1" class="logo-media">
+                        </div>
+                        <h4 class="big-sentence">
+                            Elisabeth Borne annonce le report du projet de loi
+                            sur l'immigration voulu par Emmanuel Macron
+
+                        </h4>
+                        <div class="time">
+                            Il y a 3&nbsp;heures
+                        </div>
+                    </div>
+                    <div class="BF-second flex col">
+                        <section class="media-scroller flex col">
+                            <article class="small-featured flex col">
+                                <div class="media">
+                                    <div class="media-logo">
+                                        <img src="media/media_logo/media-France24.jpg" alt="France 24 logo"
+                                            class="logo-media">
+                                        <span>FRANCE 24</span>
+                                    </div>
+                                </div>
+                                <h4 class="small-sentence">
+                                    Elisabeth Borne présente sa feuille de route
+                                    pour des "solutions concrètes" &bull; FRANCE 24
+                                </h4>
+                                <div class="time flex">
+                                    <div>Il y a 4&nbsp;heures</div>
+                                    <span><i class="fa-brands fa-youtube fa-lg"></i></span>
+                                </div>
+                            </article>
+                            <article class="small-featured flex col">
+                                <div class="media-logo">
+                                    <img src="media/media_logo/media-Franceinfo_2.jpg" alt="France info logo 2"
+                                        class="logo-media">
+                                    <span>franceinfo</span>
+                                </div>
+                                <h4 class="small-sentence">
+                                    La loi immigration ne sera pas inscrite à l'agenda du Parlement d'ici à l'été
+                                </h4>
+                                <div class="time">
+                                    Il y a 8&nbsp;heures
+                                </div>
+                            </article>
+                            <article class="small-featured flex col">
+                                <div class="media">
+                                    <div class="media-logo">
+                                        <img src="media/media_logo/media-BoulevardVoltaire.jpg"
+                                            alt="Boulevard Voltaire logo" class="logo-media">
+                                        <span>Boulevard&nbsp;Voltaire</span>
+                                    </div>
+                                </div>
+                                <h4 class="small-sentence">
+                                    Le projet de loi Immigration
+                                    est repoussé à l'automne
+                                </h4>
+                                <div class="time">
+                                    Il y a 2&nbsp;heures
+                                </div>
+                            </article>
+                        </section>
+                        <section class="full-cover flex">
+                            <figure>
+                                <img src="media/logo/googleusercontent.jpg" alt="user logo" class="cover">
+                            </figure>
+                            Couverture&nbsp;complète
+                            <span class="mobileV">de&nbsp;cet&nbsp;évènement</span>
+                        </section>
+                    </div>
+                </div>
+                <hr>
+                <div class="medium-featured">
+                    <article class="MF-article">
+                        <a href="#" class="flex">
+                            <div class="MFA-text">
+                                <div class="media-logo">
+                                    <img src="media/media_logo/media-CNEWS.jpg" alt="CNEWS logo" class="logo-media">
+                                </div>
+                                <h4 class="big-sentence">
+                                    Fillette retrouvée morte dans un sac-pubelle :
+                                    ce que l'on sait du suspect déjà mis en examen pour viol sur mineur
+                                </h4>
+                            </div>
+                            <figure>
+                                <img src="media/medium_img/Fait divers.jpg" alt="Encadrement de police" class="medImg">
+                            </figure>
+                        </a>
+                    </article>
+                    <div class="cover flex">
+                        <div class="time">
+                            Il y a 2&nbsp;heures
+                        </div>
+                        <figure>
+                            <img src="media/logo/googleusercontent.jpg" alt="user logo" class="cover">
+                        </figure>
+                    </div>
+                </div>
+                <div class="medium-featured">
+                    <article class="MF-article">
+                        <a href="#" class="flex">
+                            <div class="MFA-text">
+                                <div class="media-logo">
+                                    <img src="media/media_logo/media-BFMTV.jpg" alt="BFMTV logo" class="logo-media">
+                                </div>
+                                <h4 class="big-sentence">
+                                    Ukraine: Volodymyr Zelensky et Xi Jinping se sont
+                                    entretenus pour la première fois depuis le début du conflit
+                                </h4>
+                            </div>
+                            <figure>
+                                <img src="media/medium_img/Volodymyr Zelensky & Xi Jinping.jpg"
+                                    alt="Volodymyr Zelensky et Xi Jinping" class="medImg">
+                            </figure>
+                        </a>
+                    </article>
+                    <div class="cover flex">
+                        <div class="time">
+                            Il y a 2&nbsp;heures
+                        </div>
+                        <figure>
+                            <img src="media/logo/googleusercontent.jpg" alt="user logo" class="cover">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                <aside class="row">
+                    <div class=" col-12">
+                        <div class="title flex just-cont_space-bt">
+                            <h3 class="little-title flex">
+                                <div>Actualités&nbsp;locales</div>
+                                <i class="fa-solid fa-chevron-right fa-sm"></i>
+                            </h3>
+                            <div class="filter">
+                                <span>
+                                    <i class="fa-solid fa-sliders fa-sm"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="localNews-article">
+                            <div class="location flex">
+                                <div class="loc-city1">
+                                    <button class="loc-city">Chastre</button>
+                                </div>
+                                <div class="loc-city2">
+                                    <button class="loc-city">Etterbeek</button>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="small-article">
+                                <div class="SA">
+                                    <div class="SA-article flex">
+                                        <div class="SAA-text">
+                                            <div class="media-logo">
+                                                <img src="media/media_logo/media-lavenir.jpg" alt="L'avenir logo"
+                                                    class="logo-media">
+                                            </div>
+                                            <h4 class="medium-sentence">
+                                                Chastre: pour la secrétaire d'Etat Nicole De Moor,
+                                                Divine N'Sunda "est en séjour irrégulier
+                                                et doit quitter le pays. Point."
+                                            </h4>
+                                        </div>
+                                        <figure class="SA-img">
+                                            <img src="media/small_img/Divine N'Sunda.jpg" alt="Divine N'Sunda"
+                                                class="smallImg">
+                                        </figure>
+                                    </div>
+                                    <div class="cover flex">
+                                        <div class="time">
+                                            Hier
+                                        </div>
+                                        <figure>
+                                            <img src="media/logo/googleusercontent.jpg" alt="user logo" class="cover">
+                                        </figure>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="small-article">
+                                <div class="SA">
+                                    <div class="SA-article flex">
+                                        <div class="SAA-text">
+                                            <div class="media-logo">
+                                                <img src="media/media_logo/media-RTBF.jpg" alt="RTBF logo"
+                                                    class="logo-media">
+                                                <span>RTBF</span>
+                                            </div>
+                                            <h4 class="medium-sentence">
+                                                L'hypercentre de Waterloo
+                                                devient la première Zone
+                                                d'enjeu communal de Wallonie
+                                            </h4>
+                                        </div>
+                                        <figure class="SA-img">
+                                            <img src="media/small_img/Hypercentre de Waterloo.jpg" alt="Carte"
+                                                class="smallImg">
+                                        </figure>
+                                    </div>
+                                    <div class="cover flex">
+                                        <div class="time">
+                                            Il y a 7&nbsp;heures
+                                        </div>
+                                        <figure>
+                                            <img src="media/logo/googleusercontent.jpg" alt="user logo" class="cover">
+                                        </figure>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="small-article">
+                                <div class="SA">
+                                    <div class="SA-article flex">
+                                        <div class="SAA-text">
+                                            <div class="media-logo">
+                                                <img src="media/media_logo/media-DHLessports+.jpg"
+                                                    alt="DHL Les Sports + logo" class="logo-media">
+                                            </div>
+                                            <h4 class="medium-sentence">
+                                                Namur: un jeune homme se noie dans la Sambre
+                                            </h4>
+                                        </div>
+                                        <figure class="SA-img">
+                                            <img src="media/small_img/Sambre.jpg" alt="Sambre" class="smallImg">
+                                        </figure>
+                                    </div>
+                                    <div class="cover flex">
+                                        <div class="time">
+                                            Il y a 2&nbsp;heures
+                                        </div>
+                                        <figure>
+                                            <img src="media/logo/googleusercontent.jpg" alt="user logo" class="cover">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="title">
+                            <h3 class="little-title">
+                                <div>Recommandations&nbsp;<br class="mobileV">personnalisées</div>
+                            </h3>
+                        </div>
+                        <hr>
+                        <div class="small-article">
+                            <div class="SA">
+                                <div class="SA-article flex">
+                                    <div class="SAA-text">
+                                        <div class="media-logo">
+                                            <img src="media/media_logo/media-Lemonde_1.jpg" alt="Le monde logo"
+                                                class="logo-media">
+                                        </div>
+                                        <h4 class="medium-sentence">
+                                            Emploi : les nouvelles pratiques des entreprises pour attirer les candidats
+                                        </h4>
+                                    </div>
+                                    <figure class="SA-img">
+                                        <img src="media/small_img/Dessin réalisé par YAN COLCANOPA.jpg" alt="BD"
+                                            class="smallImg">
+                                    </figure>
+                                </div>
+                                <div class="cover flex">
+                                    <div class="time">
+                                        Il y a 13&nbsp;heures
+                                    </div>
+                                    <figure>
+                                        <img src="media/logo/googleusercontent.jpg" alt="user logo" class="cover">
+                                    </figure>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="small-article">
+                            <div class="SA">
+                                <div class="SA-article flex">
+                                    <div class="SAA-text">
+                                        <div class="media-logo">
+                                            <img src="media/media_logo/media-LeFigaro.jpg" alt="Le Figaro logo"
+                                                class="logo-media">
+                                        </div>
+                                        <h4 class="medium-sentence">
+                                            Jeux vidéo : la fusion Microsoft-Activision bloquée par Londres
+                                        </h4>
+                                    </div>
+                                    <figure class="SA-img">
+                                        <img src="media/small_img/Jeux sous microsoft.jpg"
+                                            alt="Activision, Blizzard & Microsoft" class="smallImg">
+                                    </figure>
+                                </div>
+                                <div class="cover flex">
+                                    <div class="time">
+                                        Il y a 5&nbsp;heures
+                                    </div>
+                                    <figure>
+                                        <img src="media/logo/googleusercontent.jpg" alt="user logo" class="cover">
+                                    </figure>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="small-article">
+                            <div class="SA">
+                                <div class="SA-article flex">
+                                    <div class="SAA-text">
+                                        <div class="media-logo">
+                                            <img src="media/media_logo/media-20Minutes.jpg" alt="DHL Les Sports + logo"
+                                                class="logo-media">
+                                        </div>
+                                        <h4 class="medium-sentence">
+                                            Nouvelle arnaque aux virements non autorisés, vérifiez vos comptes bancaires
+                                        </h4>
+                                    </div>
+                                    <figure class="SA-img">
+                                        <img src="media/small_img/carte bancaire pris par Raphael Bloch.jpg"
+                                            alt="Carte bancaire" class="smallImg">
+                                    </figure>
+                                </div>
+                                <div class="cover flex">
+                                    <div class="time">
+                                        Il y a 2&nbsp;heures
+                                    </div>
+                                    <figure>
+                                        <img src="media/logo/googleusercontent.jpg" alt="user logo" class="cover">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <section class="theme-art row">
+            <section class="title-theme flex just-cont_space-bt col-12">
+                <div class="big-title">
+                    <h2>Vos&nbsp;thèmes</h2>
+                </div>
+                <div class="custom-filter">
+                    <i class="fa-solid fa-sliders fa-sm"></i>
+                    <span>
+                        Personnaliser
+                    </span>
+                </div>
+            </section>
+            <section class="theme col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="title">
+                    <h3 class="little-title flex">
+                        <div id="France">France</div>
+                        <i class="fa-solid fa-chevron-right fa-sm"></i>
+                    </h3>
+                </div>
+                <hr>
+                <div class="localNews-article">
+                    <div class="small-article">
+                        <div class="SA">
+                            <div class="SA-article">
+                                <div class="SAA-text">
+                                    <div class="media-logo">
+                                        <img src="media/media_logo/media-OuestFrance.jpg" alt="Ouest France logo"
+                                            class="logo-media">
+                                    </div>
+                                    <h4 class="medium-sentence">
+                                        Affaire Leslie et Kevin.
+                                        Guy Trompat, ce « papa fou de douleur »,
+                                        condamné à un an de prison ferme
+                                    </h4>
+                                </div>
+                                <figure class="SA-img">
+                                    <img src="media/small_img/Leslie & Kevin.jpg" alt="Leslie & Kevin" class="smallImg">
+                                </figure>
+                            </div>
+                            <div class="cover flex">
+                                <div class="time">
+                                    Il y a 1&nbsp;heure
+                                </div>
+                                <figure>
+                                    <img src="media/logo/googleusercontent.jpg" alt="Couverture logo" class="cover">
+                                </figure>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="small-article">
+                        <div class="SA">
+                            <div class="SA-article">
+                                <div class="SAA-text">
+                                    <div class="media-logo">
+                                        <img src="media/media_logo/media-BFMTV.jpg" alt="BFMTV logo" class="logo-media">
+                                    </div>
+                                    <h4 class="medium-sentence">
+                                        Suicide de Lindsay : Marlène Schiappa pointe
+                                        "un problème de déni" sur le harcèlement scolaire
+                                    </h4>
+                                </div>
+                                <figure class="SA-img">
+                                    <img src="media/small_img/Marlène Schiappa.jpg" alt="Marlène Schiappa"
+                                        class="smallImg">
+                                </figure>
+                            </div>
+                            <div class="cover flex">
+                                <div class="time">
+                                    Il y a 1&nbsp;heure
+                                </div>
+                                <figure>
+                                    <img src="media/logo/googleusercontent.jpg" alt="Couverture logo" class="cover">
+                                </figure>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="small-article">
+                        <div class="SA">
+                            <div class="SA-article">
+                                <div class="SAA-text">
+                                    <div class="media-logo">
+                                        <img src="media/media_logo/media-LeParisien.jpg" alt="Le Parisien logo"
+                                            class="logo-media">
+                                    </div>
+                                    <h4 class="medium-sentence">
+                                        « Je m'excuse » : un prêtre condamné
+                                        à 20 ans de prison pour viols
+                                        et agressions sexuelles sur 27 mineurs
+                                    </h4>
+                                </div>
+                                <figure class="SA-img">
+                                    <img src="media/small_img/Couloir d'une prison.jpg"
+                                        alt="Grille et un homme floué à l'arrière" class="smallImg">
+                                </figure>
+                            </div>
+                            <div class="cover flex">
+                                <div class="time">
+                                    Il y a 4&nbsp;heures
+                                </div>
+                                <figure>
+                                    <img src="media/logo/googleusercontent.jpg" alt="Couverture logo" class="cover">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="theme col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="title">
+                    <h3 class="little-title flex">
+                        <div id="International">International</div>
+                        <i class="fa-solid fa-chevron-right fa-sm"></i>
+                    </h3>
+                </div>
+                <hr>
+                <div class="localNews-article">
+                    <div class="small-article">
+                        <div class="SA">
+                            <div class="SA-article">
+                                <div class="SAA-text">
+                                    <div class="media-logo">
+                                        <img src="media/media_logo/media-OuestFrance.jpg" alt="Ouest France logo"
+                                            class="logo-media">
+                                    </div>
+                                    <h4 class="medium-sentence">
+                                        Ce que l'on sait de l'accident de trains en Inde,
+                                        l'un des plus meurtriers de l'histoire du pays
+                                    </h4>
+                                </div>
+                                <figure class="SA-img">
+                                    <img src="media/small_img/Accident de train - Inde.jpg" alt="Accident de train"
+                                        class="smallImg">
+                                </figure>
+                            </div>
+                            <div class="cover flex">
+                                <div class="time">
+                                    Il y a 1&nbsp;heure
+                                </div>
+                                <figure>
+                                    <img src="media/logo/googleusercontent.jpg" alt="Couverture logo" class="cover">
+                                </figure>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="small-article">
+                        <div class="SA">
+                            <div class="SA-article">
+                                <div class="SAA-text">
+                                    <div class="media-logo">
+                                        <img src="media/media_logo/media-RTBF.jpg" alt="RTBF logo" class="logo-media">
+                                    </div>
+                                    <h4 class="medium-sentence">
+                                        EN DIRECT - Guerre en Ukraine : quatre civils tués
+                                        dans un bombardement sur le territoire russe
+                                    </h4>
+                                </div>
+                                <figure class="SA-img">
+                                    <img src="media/small_img/Batiment en feu.jpg" alt="Batiment en feu"
+                                        class="smallImg">
+                                </figure>
+                            </div>
+                            <div class="cover flex">
+                                <div class="time">
+                                    Il y a 1&nbsp;heure
+                                </div>
+                                <figure>
+                                    <img src="media/logo/googleusercontent.jpg" alt="Couverture logo" class="cover">
+                                </figure>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="small-article">
+                        <div class="SA">
+                            <div class="SA-article">
+                                <div class="SAA-text">
+                                    <div class="media-logo">
+                                        <img src="media/media_logo/media-rfi.jpg" alt="RFI logo" class="logo-media">
+                                    </div>
+                                    <h4 class="medium-sentence">
+                                        Sénégal: des militaires déployés à Dakar,
+                                        Amnesty International juge la situation
+                                        «très préoccupante»
+                                    </h4>
+                                </div>
+                                <figure class="SA-img">
+                                    <img src="media/small_img/Homme interpellé - Sénégal.jpg"
+                                        alt="Un homme interpellé au Sénégal" class="smallImg">
+                                </figure>
+                            </div>
+                            <div class="cover flex">
+                                <div class="time">
+                                    Il y a 4&nbsp;heures
+                                </div>
+                                <figure>
+                                    <img src="media/logo/googleusercontent.jpg" alt="Couverture logo" class="cover">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="theme col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="title">
+                    <h3 class="little-title flex">
+                        <div id="Sports">Sports</div>
+                        <i class="fa-solid fa-chevron-right fa-sm"></i>
+                    </h3>
+                </div>
+                <hr>
+                <div class="localNews-article">
+                    <div class="small-article">
+                        <div class="SA">
+                            <div class="SA-article">
+                                <div class="SAA-text">
+                                    <div class="media-logo">
+                                        <img src="media/media_logo/media-RMCSport.jpg" alt="RMC Sport logo"
+                                            class="logo-media">
+                                    </div>
+                                    <h4 class="medium-sentence">
+                                        Ligue 2: ce que risque Bordeaux après
+                                        l'agression d'un joueur de Rodez par
+                                        un supporter
+                                    </h4>
+                                </div>
+                                <figure class="SA-img">
+                                    <img src="media/small_img/Joueurs au sol.jpg" alt="Tumulte en plein de foot"
+                                        class="smallImg">
+                                </figure>
+                            </div>
+                            <div class="cover flex">
+                                <div class="time">
+                                    Il y a 1&nbsp;heure
+                                </div>
+                                <figure>
+                                    <img src="media/logo/googleusercontent.jpg" alt="Couverture logo" class="cover">
+                                </figure>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="small-article">
+                        <div class="SA">
+                            <div class="SA-article">
+                                <div class="SAA-text">
+                                    <div class="media-logo">
+                                        <img src="media/media_logo/media-FootMercato.jpg" alt="Foot mercato logo"
+                                            class="logo-media">
+                                    </div>
+                                    <h4 class="medium-sentence">
+                                        Al-Hilal annonce la date de la signature de Lionel Messi !
+                                    </h4>
+                                </div>
+                                <figure class="SA-img">
+                                    <img src="media/small_img/The GOAT, Lionel Messi.jpg" alt="Le GOAT, Lionel Messi"
+                                        class="smallImg">
+                                </figure>
+                            </div>
+                            <div class="cover flex">
+                                <div class="time">
+                                    Il y a 1&nbsp;heure
+                                </div>
+                                <figure>
+                                    <img src="media/logo/googleusercontent.jpg" alt="Couverture logo" class="cover">
+                                </figure>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="small-article">
+                        <div class="SA">
+                            <div class="SA-article">
+                                <div class="SAA-text">
+                                    <div class="media-logo">
+                                        <img src="media/media_logo/media-Lemonde_1.jpg" alt="Le monde logo"
+                                            class="logo-media">
+                                    </div>
+                                    <h4 class="medium-sentence">
+                                        Roland-Garros 2023 : les matchs féminins
+                                        au programme des sessions nocturnes font débat
+                                    </h4>
+                                </div>
+                                <figure class="SA-img">
+                                    <img src="media/small_img/Aryna Sabalenka.jpg" alt="Aryna Sabalenka"
+                                        class="smallImg">
+                                </figure>
+                            </div>
+                            <div class="cover flex">
+                                <div class="time">
+                                    Il y a 4&nbsp;heures
+                                </div>
+                                <figure>
+                                    <img src="media/logo/googleusercontent.jpg" alt="Couverture logo" class="cover">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer class="flex col">
+        <a href="#infoForU">
+            <div>
+                Découvrez plus d'actualités basées sur vos centres d'intérêt
+            </div>
+            <div>
+                Pour vous
+            </div>
+        </a>
+        <button type="button">
+            <a href="../../index.html">
+                Homepage
+            </a>
+        </button>
+    </footer>
+    <script src="https://kit.fontawesome.com/5d0d4e5c87.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,533 @@
+html>*,
+body>*,
+*,
+a {
+    transition: 0.2s;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.just-cont_space-ar {
+    justify-content: space-around;
+}
+
+.just-cont_space-bt {
+    justify-content: space-between;
+}
+
+.just-cont_space-ev {
+    justify-content: space-evenly;
+}
+
+
+.bigImg {
+    width: 280px;
+    height: 168px;
+    object-fit: cover;
+}
+
+.medImg {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.GigaImg {
+    width: 50em;
+    height: 20em;
+    object-fit: cover;
+}
+
+
+
+* figure {
+    height: max-content;
+    width: max-content;
+}
+
+figure .smallImg {
+    height: 64px;
+    width: 64px;
+    object-fit: cover;
+}
+
+figure .cover {
+    height: 20px;
+    width: 20px;
+}
+
+.logo-media {
+    height: 12px;
+}
+
+.big-sentence,
+.medium-sentence,
+.small-sentence {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+/********************************************************************/
+
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    position: absolute;
+    display: grid;
+    row-gap: .5em;
+    width: 100%;
+    height: max-content;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header"
+        "nav"
+        "main"
+        "footer";
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+.header-nav {
+    position: fixed;
+    background-color: #f6f8fc;
+    width: inherit;
+    height: 104px;
+    z-index: 1;
+}
+
+header {
+    grid-area: header;
+    padding: 8px;
+    align-items: center;
+}
+
+.logo-google {
+    height: 24px;
+    width: 74px;
+    margin-bottom: 6px;
+}
+
+.google-logo span {
+    font-size: 24px;
+    align-content: center;
+}
+
+.search-setting {
+    width: 70em;
+    align-items: center;
+}
+
+.inputSearch {
+    width: 40em;
+    height: 3em;
+    padding-left: 2.5em;
+    border-radius: 8px;
+    border: none;
+}
+
+.inputSearch:focus {
+    outline: 4px solid #d1d2d6;
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+    left: 24em;
+    top: 1.6em;
+}
+
+.fa-caret-down {
+    position: absolute;
+    right: 32em;
+    top: 1.6em;
+}
+
+#search-input {
+    position: absolute;
+    left: -999em;
+}
+
+.setting * {
+    margin-right: 2em;
+}
+
+.user-pic {
+    height: 40px;
+    width: 40px;
+    border: 2px solid;
+    border-radius: 50%;
+    border-top-color: red;
+    border-right-color: blue;
+    border-bottom-color: green;
+    border-left-color: yellow;
+}
+
+#menu-burger {
+    position: absolute;
+    left: -999em;
+}
+
+.nav-bar {
+    margin: 0 auto;
+}
+
+.nav-bar div {
+    margin: .5em 1em 0 1em;
+}
+
+nav .nav-bar div a {
+    color: black;
+}
+
+nav .nav-bar div i {
+    display: none;
+}
+
+nav .nav-bar div a i {
+    display: none;
+}
+
+.container {
+    grid-area: main;
+    width: 1140px;
+    margin: 8em auto 0 auto;
+}
+
+h2 {
+    font-size: 24px;
+    padding-right: 1em;
+}
+
+.full-article .row h6 {
+    margin: 0 0 1em 10.6em;
+
+}
+
+.full-article div:first-child {
+    text-align: center;
+}
+
+.description {
+    width: 50em;
+    background-color: #eef0f8;
+    margin-top: -1em;
+}
+
+.text-art {
+    width: 45.6em;
+    margin: 1em 10em 0 15em;
+    row-gap: 2em;
+    border-left: 1px solid grey;
+}
+
+.text-art div:first-child {
+    font-size: 24px;
+}
+
+.btn-danger {
+    width: max-content;
+    padding: 2px 4px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.other,
+.debate {
+    padding-left: 2em;
+}
+
+.additional-info {
+    padding-left: 1em;
+}
+
+.other::before {
+    background-color: #e61e00;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: calc(26.6em);
+    height: 8px;
+    width: 8px;
+}
+
+.debate::before {
+    background-color: #e61e00;
+    border-radius: 50%;
+    position: absolute;
+    left: 30px;
+    top: calc(35.4em);
+    height: 8px;
+    width: 8px;
+    content: "";
+}
+
+.additional-info::before {
+    background-image: url('media/media_logo/media-Franceinfo_2.jpg');
+    background-size: 10px 20px;
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    content: "";
+    border-radius: 50%;
+}
+
+
+
+table,
+tr,
+th,
+td {
+    padding: .5em;
+}
+
+tr *,th *,td *{
+    border-radius: 20px;
+    padding: .3em .5em;
+}
+
+table tr .empty {
+    width: 2em;
+}
+
+* .champ {
+    table-layout: auto;
+}
+
+table {
+    margin: 0 auto;
+    table-layout: fixed;
+    width: 75%;
+    background-color: #d1d2d6;
+    border-radius: 20px;
+}
+
+.test{
+    max-width: max-content;
+    margin: 0 8.6em;
+}
+
+.user{
+    text-align: center;
+    margin: 0 0 0 50em;
+}
+
+.important {
+    color: red;
+}
+
+.validation {
+    column-gap: 2em;
+    margin:.5em 0 0 1em;
+}
+
+.btn-warning, .btn-light{
+    border-radius: 18px;
+    padding: .3em .5em;
+}
+
+
+#paragraph {
+    display: none;
+}
+
+.toggle {
+    display: none;
+}
+
+#paragraph:checked~.toggle {
+    display: block;
+}
+
+.WI-location {
+    column-gap: 8px;
+}
+
+.section-featured {
+    margin-top: 1em;
+    align-items: center;
+}
+
+.iconsupp {
+    margin-right: .5em;
+}
+
+.date-bigTitle {
+    margin-top: 1em;
+}
+
+.section-weather {
+    background-color: #f6f8fc;
+    border-radius: 18px;
+    column-gap: 4px;
+    padding: 8px 12px 8px 12px;
+    align-items: center;
+    align-content: center;
+}
+
+.principal-art {
+    margin-top: 1em;
+}
+
+.featured-article {
+    margin-top: 1em;
+    padding: .5em;
+    background-color: #f6f8fc;
+    border-radius: 18px;
+    border: 4px solid white;
+}
+
+aside {
+    margin-top: 1em;
+    row-gap: 1em;
+    border: 4px solid white;
+}
+
+aside div {
+    background-color: #f6f8fc;
+    border-radius: 18px;
+}
+
+.little-title {
+    align-items: center;
+    column-gap: 4px;
+}
+
+.little-title i {
+    margin-top: 6px;
+}
+
+.time {
+    column-gap: 4px;
+}
+
+.full-cover {
+    column-gap: 4px;
+}
+
+.BF-first {
+    width: 20em;
+}
+
+.full-cover .mobileV {
+    display: none;
+}
+
+.theme-art {
+    margin-top: .5em;
+}
+
+.theme {
+    background-color: #f6f8fc;
+    border-radius: 18px;
+    border: 4px solid white;
+}
+
+footer {
+    position: relative;
+    grid-area: footer;
+    width: inherit;
+    height: 100px;
+    padding: 1.5em;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a div:first-child {
+    color: #1a73e8;
+}
+
+footer a div:last-child {
+    margin: .5em auto 1.5em auto;
+    padding: .5em 2em;
+    width: max-content;
+    font-weight: 600;
+    background-color: #1a73e8;
+    color: white;
+    border-radius: 20px;
+}
+
+footer button {
+    position: absolute;
+    right: 2em;
+    bottom: 4px;
+    height: 2.5em;
+    width: 8.5em;
+    font-weight: 600;
+    background-color: #1a73e8;
+    border: none;
+    border-radius: 20px;
+}
+
+footer button a{
+    color: white;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 1040px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 740px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+
+    .section-weather {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 430px;
+    }
+
+
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 425px;
+    }
+
+    .section-weather {
+        display: none;
+    }
+
+    .mobileV {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .container {
+        width: 425px;
+    }
+}

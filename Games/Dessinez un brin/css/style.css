@@ -54,6 +54,17 @@ main{
     margin-left: 3em;
 }
 
+ul li:first-child::before{
+    content: "➡️";
+}
+
+ul li:nth-child(2)::before{
+    content: "🖍️";
+}
+
+ul li:last-child::before{
+    content: "🔙";
+}
 #board {
     height: 480px;
     width: 435px;
