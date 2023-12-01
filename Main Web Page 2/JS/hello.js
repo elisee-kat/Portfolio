@@ -1,1 +1,0 @@
-alert(new Date().getDate);
