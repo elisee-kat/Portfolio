@@ -48,12 +48,28 @@ main{
     font-size: 2em;
 }
 
-button{
+.start{
     background-color: blue;
     border-radius: 20px;
     font-size: 1em;
     color: white;
+    width: 10em ;
+    margin: 0 auto;
     padding: 10px;
+}
+
+button:not(.start) {
+    position: absolute;
+    right: 3em;
+    bottom: 4em;
+    height:2em;
+    width: 8em;
+    background-color: blue;
+    border-radius: 20px;
+}
+
+button:not(.start) a{
+    color: white;
 }
 /***************************************************/
 footer{
