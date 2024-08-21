@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textes sauvegardés</title>
+</head>
+<body>
+    <h2>Textes sauvegardés :</h2>
+    <ul id="savedTextsList"></ul>
+
+    <script>
+        // Récupérer les textes sauvegardés depuis IndexedDB
+        var request = window.indexedDB.open('SelectedTextDB', 1);
+
+        request.onsuccess = function(event) {
+            var db = event.target.result;
+
+            var transaction = db.transaction(['selectedTexts'], 'readonly');
+            var objectStore = transaction.objectStore('selectedTexts');
+
+            var savedTextsList = document.getElementById('savedTextsList');
+
+            // Récupérer tous les objets dans l'objectStore
+            objectStore.openCursor().onsuccess = function(cursorEvent) {
+                var cursor = cursorEvent.target.result;
+                if (cursor) {
+                    // Ajouter chaque texte à la liste
+                    var listItem = document.createElement('li');
+                    listItem.textContent = cursor.value.text;
+                    savedTextsList.appendChild(listItem);
+
+                    // Passer au prochain élément
+                    cursor.continue();
+                }
+            };
+        };
+
+        request.onerror = function(event) {
+            console.error('Erreur lors de l\'ouverture de la base de données : ', event.target.error);
+        };
+    </script>
+</body>
+</html>
