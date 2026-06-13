@@ -1,0 +1,98 @@
+* {
+    transition: 0.2s;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    outline: 2px solid fuchsia !important;
+}
+
+html {
+    width: 100vw;
+}
+
+.flex {
+    display: flex;
+}
+
+.just-cont_space-bt {
+    justify-content: space-between;
+}
+
+.just-cont_space-ev {
+    justify-content: space-evenly;
+}
+
+.bigImg {
+    width: 280px;
+    height: 168px;
+    object-fit: cover;
+}
+
+.medImg {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.GigaImg {
+    width: 50em;
+    height: 20em;
+    object-fit: cover;
+}
+
+/*---------------------------------------------------------*/
+body {
+    position: absolute;
+    display: grid;
+    width: 100%;
+    height: max-content;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header-nav"
+        "main"
+        "footer";
+    font-family: sans-serif;
+    overflow-x: hidden;
+    background-color: red !important;
+}
+
+#header-nav {
+    position: fixed;
+    z-index: 1;
+    grid-area: header-nav;
+    background-color: aqua;
+    width: inherit;
+    height: 164px;
+    padding: 8px;
+    margin: auto;
+
+}
+
+header {
+    height: 96px;
+}
+
+nav {
+    height: 60px;
+    margin: 0 auto;
+}
+
+main {
+    position: relative;
+    grid-area: main;
+    background-color: cadetblue;
+    width: 1140px;
+    height: 100em;
+    margin: auto;
+    margin-top: 12em;
+    padding: 1em;
+
+}
+
+footer {
+    position: relative;
+    grid-area: footer;
+    background-color: chocolate;
+    height: 100px;
+}
